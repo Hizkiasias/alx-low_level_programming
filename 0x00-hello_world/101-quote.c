@@ -1,13 +1,12 @@
-#include <stdio.h>
+#include <unistd.h>
+
 /**
- *main - Entry point
- *
- *printing with out printf n put
- *Return: 0 after running the program
- */
-int write(int filedes, const char *buf, unsigned int nbyte);
-int main(int argc, char **argv)
+  * main - Prints a text
+  *
+  * Return: Always 1 (Success)
+  */
+int main(void)
 {
-	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 49);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
