@@ -1,6 +1,19 @@
-#include <stdio.h>
-int main()
+#include "stdio.h"
+
+/**
+ * main - Entry point
+ * Return:0
+ */
+
+int main(void)
 {
-	printf("_putchar");
-	return(0);
+char c[8] = "_putchar";
+int i = 0;
+while (i < 7)
+{
+_putchar(c[i]);
+i++;
+}
+_putchar('\n');
+return (0);
 }
