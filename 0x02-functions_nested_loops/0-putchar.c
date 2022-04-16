@@ -1,27 +1,19 @@
-#include "stdio.h"
-
-
+#include "main.h"
 /**
- * main - Entry point
- * Return:0
+ *main-main block
+ *Description:print -putchar in a new line
+ *Return:this program returns zero
  */
-
 int main(void)
 {
-<<<<<<< HEAD
-	char 
-	printf("_putchar");
-	return(0);
-=======
-char c[8] = "_putchar";
-int i = 0;
-
-while (i < 8)
-{
- putchar(c[i]);
-i++;
-}
-putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
->>>>>>> 7f2600fc9f7cb0ee15d14ad398e643f3d7eb11d4
 }
