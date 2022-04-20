@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- * puts_half - prints the second half of a string.
- *@str: string to use.
+ * *_strcat - concatenates @src to @dest
+ * @src: the source string to append to @dest
+ * @dest: the destiation string to be concatenated upon
+ * Return:pointer to the resulting string
  */
 
-void puts_half(char *str)
+char *_strcat(char *dest, char *src)
 {
-	int length, n, i;
+	int index = 0;
+	int dest_len = 0;
 
-	for (length = 0; str[length] != '\0'; length++)
-	{
-	}
-	n = (length - 1) / 2;
-	for (i = n + 1; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+	while (dest[index++])
+		dest_len++;
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+	return (dest);
 }
